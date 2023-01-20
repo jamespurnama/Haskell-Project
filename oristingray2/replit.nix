@@ -1,0 +1,10 @@
+{ pkgs }: {
+    deps = [
+        pkgs.haskellPackages.stack
+        (pkgs.haskellPackages.ghcWithPackages (pkgs: [
+            # Put your dependencies here!
+        ]))
+        pkgs.haskell-language-server
+        pkgs.cabal-install
+    ];
+}
